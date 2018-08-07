@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import RcCheckbox from 'rc-checkbox';
 import classNames from 'classnames';
-import shallowEqual from 'shallowequal';
+import * as shallowEqual from 'shallowEqual';
 import RadioGroup from './group';
 import RadioButton from './radioButton';
 import { RadioProps, RadioGroupContext } from './interface';

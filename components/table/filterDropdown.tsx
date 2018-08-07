@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
 import closest from 'dom-closest';
 import classNames from 'classnames';
-import shallowequal from 'shallowequal';
+import * as shallowEqual from 'shallowEqual';
 import Dropdown from '../dropdown';
 import Icon from '../icon';
 import Checkbox from '../checkbox';
@@ -52,7 +52,7 @@ export default class FilterMenu<T> extends React.Component<FilterMenuProps<T>, F
      * Fixes https://github.com/ant-design/ant-design/issues/10289 and
      * https://github.com/ant-design/ant-design/issues/10209
      */
-    if ('selectedKeys' in nextProps && !shallowequal(this.props.selectedKeys, nextProps.selectedKeys)) {
+    if ('selectedKeys' in nextProps && !shallowEqual(this.props.selectedKeys, nextProps.selectedKeys)) {
       newState.selectedKeys = nextProps.selectedKeys;
     }
     if ('filterDropdownVisible' in column) {
@@ -110,7 +110,7 @@ export default class FilterMenu<T> extends React.Component<FilterMenuProps<T>, F
   confirmFilter() {
     const { selectedKeys } = this.state;
 
-    if (!shallowequal(selectedKeys, this.props.selectedKeys)) {
+    if (!shallowEqual(selectedKeys, this.props.selectedKeys)) {
       this.props.confirmFilter(this.props.column, selectedKeys);
     }
   }

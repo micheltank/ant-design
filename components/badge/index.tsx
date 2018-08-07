@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import Animate from 'rc-animate';
 import ScrollNumber from './ScrollNumber';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 
 export { ScrollNumberProps } from './ScrollNumber';
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 import RcDrawer from 'rc-drawer';
 import * as PropTypes from 'prop-types';
 import createReactContext, { Context } from 'create-react-context';
-import warning from 'warning';
+import * as warning from 'warning';
 import classNames from 'classnames';
 
 const DrawerContext: Context<Drawer | null> = createReactContext(null);

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 import addEventListener from 'rc-util/lib/Dom/addEventListener';
 import omit from 'omit.js';
 import Grid from './Grid';

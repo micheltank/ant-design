@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
 import addEventListener from 'rc-util/lib/Dom/addEventListener';
-import classNames from 'classnames';
-import shallowequal from 'shallowequal';
+import * as classNames from 'classnames';
+import * as shallowEqual from 'shallowEqual';
 import omit from 'omit.js';
 import getScroll from '../_util/getScroll';
 import { throttleByAnimationFrameDecorator } from '../_util/throttleByAnimationFrame';
@@ -103,7 +103,7 @@ export default class Affix extends React.Component<AffixProps, AffixState> {
     if (e.type === 'scroll' && originalAffixStyle && affixStyle && isWindow) {
       return;
     }
-    if (shallowequal(affixStyle, originalAffixStyle)) {
+    if (shallowEqual(affixStyle, originalAffixStyle)) {
       return;
     }
     this.setState({ affixStyle: affixStyle as React.CSSProperties }, () => {
@@ -117,7 +117,7 @@ export default class Affix extends React.Component<AffixProps, AffixState> {
 
   setPlaceholderStyle(placeholderStyle: React.CSSProperties | null) {
     const originalPlaceholderStyle = this.state.placeholderStyle;
-    if (shallowequal(placeholderStyle, originalPlaceholderStyle)) {
+    if (shallowEqual(placeholderStyle, originalPlaceholderStyle)) {
       return;
     }
     this.setState({ placeholderStyle: placeholderStyle as React.CSSProperties });

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Animate from 'rc-animate';
 import addEventListener from 'rc-util/lib/Dom/addEventListener';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 import omit from 'omit.js';
 import getScroll from '../_util/getScroll';
 import raf from 'raf';

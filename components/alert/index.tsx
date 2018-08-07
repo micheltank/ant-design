@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Animate from 'rc-animate';
 import Icon from '../icon';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 import getDataOrAriaProps from '../_util/getDataOrAriaProps';
 
 function noop() { }

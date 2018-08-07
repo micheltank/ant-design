@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { createElement, Component } from 'react';
 import omit from 'omit.js';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 
 function getNumberArray(num: string | number | undefined | null) {
   return num ?

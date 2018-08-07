@@ -4,7 +4,7 @@ import RcSelect, { Option, OptGroup } from 'rc-select';
 import classNames from 'classnames';
 import LocaleReceiver from '../locale-provider/LocaleReceiver';
 import defaultLocale from '../locale-provider/default';
-import warning from 'warning';
+import * as warning from 'warning';
 
 export interface AbstractSelectProps {
   prefixCls?: string;

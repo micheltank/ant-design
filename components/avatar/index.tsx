@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Icon from '../icon';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 
 export interface AvatarProps {
   /** Shape of avatar, options:`circle`, `square` */

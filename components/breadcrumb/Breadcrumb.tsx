@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import { cloneElement } from 'react';
 import warning from '../_util/warning';
 import BreadcrumbItem from './BreadcrumbItem';
-import classNames from 'classnames';
+import * as classNames from 'classnames';
 
 export interface Route {
   path: string;
